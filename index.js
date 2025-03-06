@@ -31,7 +31,7 @@ rl.question('Buscar: ',(query)=>{
       console.log(`Resultados para "${query}":`)
 
       if(!resultados || resultados.length === 0){
-        console.log("No se contraron  resultados")
+        console.log("No se encontraron resultados.")
         return
       }
 
