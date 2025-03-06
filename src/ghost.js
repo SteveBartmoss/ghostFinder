@@ -1,3 +1,5 @@
+import fetch from 'node-fetch'
+
 export async function daemonSearch(query){
 
   const url = `htpps://searxng.org/search?=${encodeURIComponent(query)}&format=json`
