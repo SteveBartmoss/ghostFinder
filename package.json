@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Buscado de terminal",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SteveBartmoss/ghostFinder/issues"
   },
-  "homepage": "https://github.com/SteveBartmoss/ghostFinder#readme"
+  "homepage": "https://github.com/SteveBartmoss/ghostFinder#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
