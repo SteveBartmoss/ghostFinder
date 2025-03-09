@@ -3,14 +3,12 @@ import readline from 'readline';
 
 export async function buscarEnSearx(query) {
   
-  const url = `https://searx.be/search?q=${encodeURIComponent(query)}&format=json`;
+  const url = `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json`;   
 
   try {
 
     const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-      }
+      headers: { 'User-Agent': 'Mozilla/5.0' }
     });
     
     console.log(response)
